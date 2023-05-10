@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Personality Quiz</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+			color: #333;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+		}
+
+		form {
+			max-width: 600px;
+			margin: 30px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		fieldset {
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+
+		button[type="submit"] {
+			display: block;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #0066cc;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #0052a3;
+		}
+	</style>
+</head>
+<body>
+	<h1>Personality Quiz</h1>
+
+	<form>
+		<fieldset>
+			<legend>Question 1:</legend>
+			<label>
+				<input type="radio" name="q1" value="a">
+				Option A
+			</label>
+			<label>
+				<input type="radio" name="q1" value="b">
+				Option B
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question 2:</legend>
+			<label>
+				<input type="radio" name="q2" value="a">
+				Option A
+			</label>
+			<label>
+				<input type="radio" name="q2" value="b">
+				Option B
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Question 3:</legend>
+			<label>
+				<input type="radio" name="q3" value="a">
+				Option A
+			</label>
+			<label>
+				<input type="radio" name="q3" value="b">
+				Option B
+			</label>
+		</fieldset>
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
