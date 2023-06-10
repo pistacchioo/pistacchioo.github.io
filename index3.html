@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>静静旅游笔记</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    .navbar {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+#projects .row {
+  margin-top: 100px;
+}
+
+ }
+ #footer {
+  margin-bottom: -100px;
+}
+
+.project-image {
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+  }
+
+
+    .project {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+ }
+ .project {
+   position: relative;
+ }
+
+ .project img {
+   display: block;
+   max-width: 100%;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+ }
+
+ .project-details {
+   position: absolute;
+ }
+
+ .project-image {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   margin-bottom: 20px;
+ }
+
+ .project-title {
+   font-size: 35px;
+   margin-bottom: 15px;
+ }
+
+ .project-description {
+   font-size: 16px;
+   margin-bottom: 20px;
+ }
+
+ .scroll-effect {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 0.5s ease, transform 0.5s ease;
+ }
+
+ .scroll-effect.show {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+.underline-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.underline-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.underline-link:hover::after {
+  transform: scaleX(1);
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project-content {
+  margin-bottom: 60px;
+}
+
+.footer {
+  background-color: #f8f9fa;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-bottom {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-bottom {
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  .credits {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+  </style>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">
+    <img src="17.jpg" alt="Logo" class="logo">
+  </a>
+  <div class="navbar-title">静静旅行笔记</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">关于记者</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">笔记</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">联系方式</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<header id="about" class="jumbotron text-center">
+  <section id="projects" class="container">
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="project d-flex flex-column align-items-center">
+          <img src="41.jpg" class="img-fluid project-image rounded" alt="Project 1">
+        </div>
+        <div class="project-content text-center ">
+          <h5 class="card-title project-title">意大利甜点</h5>
+          <p class="card-text project-description">甜点配咖啡绝绝子</p>
+          <a href="#" class="underline-link">了解更多</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="project d-flex flex-column align-items-center ">
+          <img src="42.jpg" class="img-fluid project-image rounded" alt="Project 2">
+        </div>
+        <div class="project-content text-center ">
+          <h5 class="card-title project-title">威尼斯之旅</h5>
+          <p class="card-text project-description">2天1夜的旅程来啦</p>
+          <a href="#" class="underline-link">了解更多</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="project d-flex flex-column align-items-center ">
+          <img src="43.jpg" class="img-fluid project-image rounded" alt="Project 3">
+        </div>
+        <div class="project-content text-center ">
+          <h5 class="card-title project-title">意大利美食</h5>
+          <p class="card-text project-description">意大利快餐到底是怎么样的</p>
+          <a href="#" class="underline-link">了解更多</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="project d-flex flex-column align-items-center scroll-effect">
+            <img src="44.jpg" class="img-fluid project-image rounded" alt="Project 1">
+          </div>
+          <div class="project-content text-center scroll-effect">
+            <h5 class="card-title project-title">佛罗伦萨</h5>
+            <p class="card-text project-description">两天一夜，艺术和美食之旅</p>
+            <a href="#" class="underline-link">了解更多</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project d-flex flex-column align-items-center scroll-effect">
+            <img src="45.jpg" class="img-fluid project-image rounded" alt="Project 2">
+          </div>
+          <div class="project-content text-center scroll-effect">
+            <h5 class="card-title project-title">意大利披萨的样子</h5>
+            <p class="card-text project-description">传统意大利披萨应该是怎么样的？</p>
+            <a href="#" class="underline-link">了解更多</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="project d-flex flex-column align-items-center scroll-effect">
+            <img src="47.jpg" class="img-fluid project-image rounded" alt="Project 3">
+          </div>
+          <div class="project-content text-center scroll-effect">
+            <h5 class="card-title project-title">意大利10日游</h5>
+            <p class="card-text project-description">怎么在意大利北方玩10天</p>
+            <a href="#" class="underline-link">了解更多</a>
+          </div>
+        </div>
+    </div>
+
+
+  </section>
+</header>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script>
+
+      window.addEventListener('scroll', function() {
+  var scrollElements = document.querySelectorAll('.scroll-effect');
+  for (var i = 0; i < scrollElements.length; i++) {
+    var element = scrollElements[i];
+    var position = element.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+
+    if (position < windowHeight - 100) {
+      element.classList.add('show');
+    }
+  }
+});
+$(window).scroll(function() {
+  $('.fade-in').each(function() {
+    var position = $(this).offset().top;
+    var scrollPosition = $(window).scrollTop();
+    var windowHeight = $(window).height();
+
+    if (scrollPosition > position - windowHeight + 200) {
+      $(this).addClass('visible');
+    }
+  });
+});
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    $('.scroll-effect').each(function() {
+      var position = $(this).offset().top;
+      var scrollPosition = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (scrollPosition > position - windowHeight + 200) {
+        $(this).addClass('show');
+      }
+    });
+
+    $('.fade-in').each(function() {
+      var position = $(this).offset().top;
+      var scrollPosition = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (scrollPosition > position - windowHeight + 200) {
+        $(this).addClass('visible');
+      }
+    });
+  });
+</script>
+<footer id="footer" class="footer">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about text-start">
+        <h4 class="text-start">静静笔记</h4>
+        <p class="text-start">感谢大家的观看！不要错过新的旅游帖子！</p>
+        <div class="social-links d-flex mt-4 justify-content-start">
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 d-flex align-items-end justify-content-between">
+        <div class="credits text-center">
+          <p>&copy; <span>Sheila</span> <strong class="px-1">All Rights Reserved</strong></p>
+          <p><a>Designed by Sheila</a></p>
+        </div>
+        <div class="credits text-end">
+          <h4>联系我们</h4>
+          <p>中国传媒大学</p>
+          <p>朝阳区，北京</p>
+          <p>中国</p>
+          <p class="mt-4"><strong>电话:</strong> <span>+13222222222</span></p>
+          <p><strong>邮件:</strong> <span>sheila@example.com</span></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
